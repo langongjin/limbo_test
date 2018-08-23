@@ -78,7 +78,7 @@ struct Params {
 // Here we define the evaluation function
 struct eval_func {
     // number of input dimension (x.size())
-    BO_PARAM(size_t, dim_in, 20);
+    BO_PARAM(size_t, dim_in, 5);
     // number of dimenions of the result (res.size())
     BO_PARAM(size_t, dim_out, 1);
 
@@ -88,15 +88,15 @@ struct eval_func {
         //double y = -((5 * x(0) - 2.5) * (5 * x(0) - 2.5)) + 5;
         //double y = (x(0) - 0.5) * std::sin(10 * (x(0) - 0.4));
         //double y = 0.5 - (0.8 * x(0) - 0.4) * (0.8 * x(0) - 0.4);
-//        double y = x(0)*sin(10*x(0)) + x(1)*sin(10*x(1)) + x(2)*sin(10*x(2)) +
-//                x(3)*sin(10*x(3)) + x(4)*sin(10*x(4));
         double y = x(0)*sin(10*x(0)) + x(1)*sin(10*x(1)) + x(2)*sin(10*x(2)) +
-                   x(3)*sin(10*x(3)) + x(4)*sin(10*x(4)) + x(5)*sin(10*x(5)) +
-                   x(6)*sin(10*x(6)) + x(7)*sin(10*x(7)) + x(8)*sin(10*x(8)) +
-                   x(9)*sin(10*x(9)) + x(10)*sin(10*x(10)) + x(11)*sin(10*x(11)) +
-                   x(12)*sin(10*x(12)) + x(13)*sin(10*x(13)) + x(14)*sin(10*x(14)) +
-                   x(15)*sin(10*x(15)) + x(16)*sin(10*x(16)) + x(17)*sin(10*x(17)) +
-                   x(18)*sin(10*x(18)) + x(19)*sin(10*x(19));
+                x(3)*sin(10*x(3)) + x(4)*sin(10*x(4));
+//        double y = x(0)*sin(10*x(0)) + x(1)*sin(10*x(1)) + x(2)*sin(10*x(2)) +
+//                   x(3)*sin(10*x(3)) + x(4)*sin(10*x(4)) + x(5)*sin(10*x(5)) +
+//                   x(6)*sin(10*x(6)) + x(7)*sin(10*x(7)) + x(8)*sin(10*x(8)) +
+//                   x(9)*sin(10*x(9)) + x(10)*sin(10*x(10)) + x(11)*sin(10*x(11)) +
+//                   x(12)*sin(10*x(12)) + x(13)*sin(10*x(13)) + x(14)*sin(10*x(14)) +
+//                   x(15)*sin(10*x(15)) + x(16)*sin(10*x(16)) + x(17)*sin(10*x(17)) +
+//                   x(18)*sin(10*x(18)) + x(19)*sin(10*x(19));
 //        double y = 5 - std::pow(x(0),2) - std::pow(x(1),2) -
 //                   std::pow(x(2),2) - std::pow(x(3),2) - std::pow(x(4),2);
 //        double y = 20 - std::pow(x(0),2) - std::pow(x(1),2) -
